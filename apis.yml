@@ -1,7 +1,23 @@
 aid: carbondata
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carbondata.png
 name: CarbonData
-description: CarbonData is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: CarbonData is a seed-stage company that appears in Bloomberg Beta's publicly published
+  portfolio manual, listed under the Bloomberg Beta 2013 L.P. fund (covering investments made roughly
+  2013-2016) with Matthew Moore named as the associated founder. Bloomberg Beta's own portfolio listing
+  carries no website link for the company, and enrichment searches and DNS/HTTP probes in July 2026
+  found no attributable company website, developer portal, documentation, API, or source repository.
+  The company appears to be dormant or wound down; no API surface exists to catalog at this time.
 url: https://raw.githubusercontent.com/api-evangelist/carbondata/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +25,38 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: no-public-surface
+x-research:
+  date: '2026-07-20'
+  founder: Matthew Moore
+  fund: Bloomberg Beta 2013 L.P. (2013-2016 vintage)
+  source: https://github.com/Bloomberg-Beta/Manual/blob/main/2%20-%20In%20our%20portfolio.md
+  findings:
+  - Bloomberg Beta's portfolio manual lists CarbonData with a founder but no website URL.
+  - No company website, developer portal, docs, or API found via search.
+  - carbondata.com resolves (Squarespace, HTTP 200) but serves only a "Coming Soon" under-construction
+    placeholder with no company identity; not attributable to this company.
+  - carbondata.io is parked for sale via Afternic/GoDaddy; carbondata.co does not resolve.
+  - Unrelated namesakes exist and were ruled out - Apache CarbonData (file format), the CRAN
+    "carbondata" R package, and CarbonCloud's CarbonData product.
+  artifacts: none - no API, OpenAPI, docs, or package surface exists to search, generate, or derive from.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Venture Backed
+- Portfolio
+- Seed Stage
+- Stub
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
