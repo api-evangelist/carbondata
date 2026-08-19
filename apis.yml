@@ -40,7 +40,7 @@ x-research:
   - Unrelated namesakes exist and were ruled out - Apache CarbonData (file format), the CRAN
     "carbondata" R package, and CarbonCloud's CarbonData product.
   artifacts: none - no API, OpenAPI, docs, or package surface exists to search, generate, or derive from.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
